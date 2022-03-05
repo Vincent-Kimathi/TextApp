@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Textapp</string>
+    <string name="permission_not_granted">VIII</string>
+    <string name="sms_disabled">NNN</string>
+</resources>

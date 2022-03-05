@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom ="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:backgroundTint="@color/colorAccent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter number"
+        android:autofillHints=""
+        />
+    <EditText
+        android:id="@+id/sms_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="TYPE MESSAGE"
+        android:autofillHints=""
+        android:layout_below="@+id/editText_main"
+         />
+    <ImageButton
+        android:id="@+id/message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_message_black_24dp"
+        android:layout_toRightOf="@+id/sms_message"
+        android:layout_toEndOf="@+id/sms_message"
+        android:layout_below="@+id/editText_main"
+        android:visibility="visible"
+        android:onClick="smsSendmessage"/>
+<Button
+    android:id="@+id/button_retry"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="Retry"
+android:text="Retry"
+    android:visibility="invisible"
+    android:onClick="retryApp"
+    />
+</RelativeLayout>
